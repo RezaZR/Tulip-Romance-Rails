@@ -463,6 +463,14 @@ text-align: center;
     }
 }
 
+.am-slides {
+    display: none;
+    .am-slide-img {
+        vertical-align: middle;
+        background-size: contain;
+    }
+}
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -554,6 +562,58 @@ text-align: center;
     }
 }
 
+.fst-slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.fst-slide {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(-100%, 0);
+    color: white;
+    img {
+        background-size: contain;
+    }
+    &.active {
+        transform: translate(0, 0);
+        ~ .fst-slide {
+            transform: translate(100%, 0);
+        }
+    }
+}
+
+.fsm-slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.fsm-slide {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(-100%, 0);
+    color: white;
+    img {
+        background-size: contain;
+    }
+    &.active {
+        transform: translate(0, 0);
+        ~ .fsm-slide {
+            transform: translate(100%, 0);
+        }
+    }
+}
+
 button {
     margin-top: 20px;
     border: none;
@@ -562,12 +622,6 @@ button {
     color: #333;
     padding: 10px;
     cursor: pointer;
-}
-
-@media only screen and (max-width: 300px) {
-    .prev, .next, .text {
-        font-size: 11px;
-    }
 }
 
 .c-wrapper {
@@ -677,4 +731,53 @@ button {
 
 .tr-slide-img, .bs-slide-img, .b-slide-img {
     background-size: contain;
+}
+
+.hn-mobile, .f-mobile, .hn-tablet {
+    display: none;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    body {
+        font-size: 2.7vw;
+    }
+    .hn-desktop {
+        display: none;
+    }
+    .hn-tablet {
+        display: block;
+        .nav-items li {
+            padding: .5em .2em;
+        }
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        font-size: unset;
+    }
+    .hn-desktop, .hn-tablet {
+        display: none;
+    }
+    .hn-mobile {
+        display: block;
+        .nav-items li {
+            padding: .5em .35em;    
+        }
+    }
+    .f-desktop {
+        display: none;
+    }
+    .f-mobile {
+        display: block;
+        .f-social {
+            margin: 1em auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px;
+    }
 }

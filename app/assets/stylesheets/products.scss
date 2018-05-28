@@ -1,0 +1,21 @@
+.c-tablet, .c-mobile {
+    display: none;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .c-desktop {
+        display: none;
+    }
+    .c-tablet {
+        display: block;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .c-desktop, .c-tablet {
+        display: none;
+    }
+    .c-mobile {
+        display: block;
+    }
+}

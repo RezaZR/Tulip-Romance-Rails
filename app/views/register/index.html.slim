@@ -6,7 +6,7 @@ header.header-simple.w-100.color-white
           .d-flex.justify-content-center
             a href="/" 
               img alt=("Tulip Romance Logo") src="images/logo-main.jpg" /
-main#content.content.container-100
+main#content.content.container-100.c-desktop
   section.register
     .container
       .row.centered-items
@@ -24,6 +24,39 @@ main#content.content.container-100
               .card-content
                 form accept-charset="UTF-8" action="" enctype="multipart/form-data" method="" 
                   .container
+                    .row
+                      .field
+                        label for="nama"  Nama Lengkap
+                        input#nama.input name="nama" type="text" /
+                      .field
+                        label for="telepon"  No. Telepon
+                        input#telepon.input name="telepon" type="text" /
+                      .field
+                        label for="email"  Email
+                        input#email.input name="email" type="email" /
+                      .field
+                        label for="password"  Password
+                        input#password.input name="password" type="password" /
+                      .col-12
+                        .d-flex.justify-content-center
+                          button.btn.btn-red type="submit"  Register
+
+main#content.content.container.c-mobile
+  section.register
+    .container
+      .row.centered-items
+        .d-flex.centered-items
+          .col-12.no-padding
+            .card.shadow-outset-sm.p-30
+              .card-title.text-center
+                h2 Register Now!
+                p
+                  | Already have an account? 
+                  a href="/login" 
+                    span.color-red Login
+              .card-content
+                form accept-charset="UTF-8" action="" enctype="multipart/form-data" method="" 
+                  .container.no-padding
                     .row
                       .field
                         label for="nama"  Nama Lengkap
