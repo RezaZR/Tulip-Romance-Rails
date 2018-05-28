@@ -1,0 +1,29 @@
+html
+  head
+    title Tulip Romance
+    = csrf_meta_tags
+
+    meta charset="UTF-8" /
+    meta http-equiv="X-UA-Compatible" content="chrome=1" /
+    meta name="viewport" content="width=device-width, initial-scale=1.0" /
+    meta name="author" content="Wellcode Global" /
+    meta name="description" content="Website for Personal Web Design owned by Wellcode Global" /
+    meta name="keywords" content="website, website builder, low cost website, lowcost website, personal web design, design, personal web, wellcode, wellcodeglobal, wellcode global, html, css, scss, javascript, js" /
+    /meta name="robots" content="index, follow" /
+    meta name="copyright" content="Wellcode Global 2018" /
+    meta name="distribution" content="Global" /
+    meta name="rating" content="General" /
+    /meta name="google-site-verification" content="CpVhxvqnJR6-GIBm9ApJMlbPi19U43042P33pRrErSs" /
+    meta name="apple-mobile-web-app-capable" content="yes" /
+    meta content="yes" name="apple-touch-fullscreen" /
+    meta name="apple-mobile-web-app-status-bar-style" content="black" /
+    link rel="dns-prefetch" href="https://fonts.googleapis.com/" /
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tajawal:300,400,700" /
+    link rel="shortcut icon" href="images/logo-main.jpg" sizes=("16x16 24x24 32x32 48x48 64x64") /
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload"
+
+    / script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    
+  body
+    = yield
+  = javascript_include_tag src="application.js"

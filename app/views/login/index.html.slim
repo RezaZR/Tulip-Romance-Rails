@@ -1,0 +1,36 @@
+header.header-simple.w-100.color-white
+  .wrapper
+    .container
+      .row
+        .col-12
+          .d-flex.justify-content-center
+            a href="index.html" 
+              img alt=("Tulip Romance Logo") src="images/logo-main.jpg" /
+main#content.content.container-100
+  section.register
+    .container
+      .row.centered-items
+        .d-flex.centered-items
+          .col-6
+            img.r-img.w-100 alt="" src="http://via.placeholder.com/500x300" /
+          .col-6
+            .card.shadow-outset-sm.p-30
+              .card-title.text-center
+                h2 Login
+                p
+                  | Doesn't have any account? 
+                  a href="/register" 
+                    span.color-red Register Here
+              .card-content
+                form accept-charset="UTF-8" action="" enctype="multipart/form-data" method="" 
+                  .container
+                    .row
+                      .field
+                        label for="email"  Email
+                        input#email.input name="email" type="text" /
+                      .field
+                        label for="password"  Password
+                        input#password.input name="password" type="password" /
+                      .col-12
+                        .d-flex.justify-content-center
+                          button.btn.btn-red type="submit"  Login
