@@ -703,8 +703,9 @@ button {
     margin: 3em auto;
 }
 
-.b-slide, .bs-slide, .tr-slide {
-    margin: 1em auto;
+.title-more {
+    display: block;
+    overflow: hidden;
 }
 
 .tr-slide-img, .bs-slide-img, .b-slide-img {
@@ -802,6 +803,9 @@ button {
         .f-social {
             margin: 1em auto;
         }
+    }
+    .text-title {
+        font-size: 17px;
     }
 }
 

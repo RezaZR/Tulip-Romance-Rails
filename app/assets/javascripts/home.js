@@ -140,24 +140,27 @@ setInterval(function () {
 var countDownDate = new Date("Jul 4, 2018 12:00:00").getTime();
 var ct = document.getElementsByClassName("ct");
 
-var x = setInterval(function() {
-
+var x = setInterval(function () {
     var now = new Date().getTime();
     var distance = countDownDate - now;
-    
+
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
+
     document.getElementById("ct-d").innerHTML = days + "d";
     document.getElementById("ct-h").innerHTML = hours + "h";
     document.getElementById("ct-m").innerHTML = minutes + "m";
     document.getElementById("ct-s").innerHTML = seconds + "s";
-    
+
+    document.getElementById("ct-dm").innerHTML = days + "d";
+    document.getElementById("ct-hm").innerHTML = hours + "h";
+    document.getElementById("ct-mm").innerHTML = minutes + "m";
+    document.getElementById("ct-sm").innerHTML = seconds + "s";
+
     if (distance < 0) {
         clearInterval(x);
-        alert("a");
         var i;
         for (var i = 0; i < ct.length; i++) {
             ct[i].style.display = "none";

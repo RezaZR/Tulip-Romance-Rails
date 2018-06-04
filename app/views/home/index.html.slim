@@ -406,7 +406,7 @@ main.content.container.c-mobile
             .am-slides.fade.p-30
                 .container.no-padding
                     .row
-                        .col-12
+                        .col-12.no-padding
                             .a-container-img
                                 a href="/products"
                                     img.a-slide-img src="images/bedcover-1.jpg" /
@@ -416,7 +416,7 @@ main.content.container.c-mobile
             .am-slides.fade.p-30
                 .container.no-padding
                     .row
-                        .col-12
+                        .col-12.no-padding
                             .a-container-img
                                 a href="/products"
                                     img.a-slide-img src="images/bedcover-1.jpg" /
@@ -426,7 +426,7 @@ main.content.container.c-mobile
             .am-slides.fade.p-30
                 .container.no-padding
                     .row
-                        .col-12
+                        .col-12.no-padding
                             .a-container-img
                                 a href="/products"
                                     img.a-slide-img src="images/bedcover-1.jpg" /
@@ -443,16 +443,16 @@ main.content.container.c-mobile
             h3.text-title.d-inline
                 | Flash Sales
             .countdown-timer#countdown-timer.d-inline
-                .ct#ct-d.d-inline
+                .ct#ct-dm.d-inline
                 .ct.d-inline
                     | :
-                .ct#ct-h.d-inline
+                .ct#ct-hm.d-inline
                 .ct.d-inline
                     | :
-                .ct#ct-m.d-inline
+                .ct#ct-mm.d-inline
                 .ct.d-inline
                     | :
-                .ct#ct-s.d-inline
+                .ct#ct-sm.d-inline
         .fsm-slider
             .fsm-slide.active.p-30
                 .container
@@ -503,8 +503,14 @@ main.content.container.c-mobile
                                     | Bed Sheet by Budget
         
     section.brands.spacer
-        h3.text-title
-            | Shop by Brands
+        .title-more
+            .col-6
+                h3.text-title.d-flex.justify-content-start
+                    | Shop by Brands
+            .col-6
+                .d-flex.justify-content-end
+                    a.btn.btn-sm.color-white href="/products"
+                        | See More
         .b-slide.p-30
             .container
                 .row
@@ -516,8 +522,14 @@ main.content.container.c-mobile
                             img.b-slide.img.w-100 src="images/bedcover-1.jpg" /
 
     section.best-selling.spacer
-        h3.text-title
-            | Best Sellings
+        .title-more
+            .col-6
+                h3.text-title.d-flex.justify-content-start
+                    | Shop by Brands
+            .col-6
+                .d-flex.justify-content-end
+                    a.btn.btn-sm.color-white href="/products"
+                        | See More
         .bs-slide.p-30
             .container
                 .row
@@ -529,8 +541,14 @@ main.content.container.c-mobile
                             img.bs-slide-img.w-100 src="images/bedcover-1.jpg" /
 
     section.top-rated.spacer
-        h3.text-title
-            | Top Rated
+        .title-more
+            .col-6
+                h3.text-title.d-flex.justify-content-start
+                    | Shop by Brands
+            .col-6
+                .d-flex.justify-content-end
+                    a.btn.btn-sm.color-white href="/products"
+                        | See More
         .tr-slide.p-30
             .container
                 .row
