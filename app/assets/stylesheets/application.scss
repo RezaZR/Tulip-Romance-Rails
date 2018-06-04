@@ -226,6 +226,10 @@ textarea {
     display: block;
 }
 
+.d-inline {
+    display: inline;
+}
+
 .d-flex {
     display: flex;
 }
@@ -301,6 +305,10 @@ textarea {
     }
 }
 
+.btn-sm {
+    padding: .25em 1em;
+}
+
 .btn-red {
     background-color: #ab0000 !important;
     border: 2px solid #ab0000 !important;
@@ -364,55 +372,21 @@ text-align: center;
 }
 
 @-webkit-keyframes fade {
-    0% {
-        opacity: .1;
-    }
-
-    20% {
-        opacity: .4;
-    }
-
-    40% {
-        opacity: .7;
-    }
-
-    60% {
-        opacity: .8;
-    }
-
-    80% {
-    opacity: .9;
-    }
-
-    100% {
-        opacity: 1;
+    from {
+        opacity: .4
+    } 
+    to {
+        opacity: 1
     }
 }
 
 
 @keyframes fade {
-    0% {
-        opacity: .1;
-    }
-
-    20% {
-        opacity: .3;
-    }
-
-    40% {
-        opacity: .5;
-    }
-
-    60% {
-        opacity: .7;
-    }
-
-    80% {
-        opacity: .87;
-    }
-
-    100% {
-        opacity: 1;
+    from {
+        opacity: .4
+    } 
+    to {
+        opacity: 1
     }
 }
 
@@ -729,12 +703,67 @@ button {
     margin: 3em auto;
 }
 
+.b-slide, .bs-slide, .tr-slide {
+    margin: 1em auto;
+}
+
 .tr-slide-img, .bs-slide-img, .b-slide-img {
     background-size: contain;
 }
 
 .hn-mobile, .f-mobile, .hn-tablet {
     display: none;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.a-container-img {
+    position: relative;
+}
+
+.disc-tag {
+    border-radius: 50%;
+    padding: 1.75em 1em;
+    background: #fff;
+    border: 1px solid #D50000;
+    p {
+        font-weight: 700;
+        color: #D50000;
+    }
+}
+
+.fs-timer {
+    .countdown-timer {
+        margin: auto .75em;
+        transition: padding 1s ease-in-out;
+        font-weight: 700;
+        font-size: 18px;
+        color: #D50000;
+        .ct {
+            padding: .25em;
+            border-radius: 3px;
+        }
+        #ct-d {
+            background-color: #D50000;
+            color: #fff;
+        }
+        #ct-h {
+            background-color: #D50000;
+            color: #fff;
+        }
+        #ct-m {
+            background-color: #D50000;
+            color: #fff;
+        }
+        #ct-s {
+            background-color: #D50000;
+            color: #fff;
+        }
+    }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
