@@ -8,6 +8,25 @@ $(document).ready(function () {
     })
 });
 
+$(".flash-sales__container__owl").owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay: true,
+    autoplayTimeout: 1500,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    }
+});
+
 window.onscroll = function () { stickyHeader() };
 
 var header = document.getElementById("header-nav");
@@ -94,51 +113,51 @@ function showSlidesM(n) {
     aSlides[slideIndex - 1].style.display = "block";
 }
 
-var fsSlides = $(".fs-slide");
-fsSlides.first().before(fsSlides.last());
-var fsCounter = 0;
+// var fsSlides = $(".fs-slide");
+// fsSlides.first().before(fsSlides.last());
+// var fsCounter = 0;
 
-function changeSlide() {
-    var fsSlides = $(".fs-slide");
-    var activeSlide = $(".active");
-    fsSlides.last().after(fsSlides.first());
-    activeSlide.removeClass("active").next(".fs-slide").addClass("active");
-}
+// function changeSlide() {
+//     var fsSlides = $(".fs-slide");
+//     var activeSlide = $(".active");
+//     fsSlides.last().after(fsSlides.first());
+//     activeSlide.removeClass("active").next(".fs-slide").addClass("active");
+// }
 
-var fstSlides = $(".fst-slide");
-fstSlides.first().before(fstSlides.last());
-var fstCounter = 0;
+// var fstSlides = $(".fst-slide");
+// fstSlides.first().before(fstSlides.last());
+// var fstCounter = 0;
 
-function changeSlideT() {
-    var fstSlides = $(".fst-slide");
-    var activeSlide = $(".active");
-    fstSlides.last().after(fstSlides.first());
-    activeSlide.removeClass("active").next(".fst-slide").addClass("active");
-}
+// function changeSlideT() {
+//     var fstSlides = $(".fst-slide");
+//     var activeSlide = $(".active");
+//     fstSlides.last().after(fstSlides.first());
+//     activeSlide.removeClass("active").next(".fst-slide").addClass("active");
+// }
 
-var fsmSlides = $(".fsm-slide");
-fsmSlides.first().before(fsmSlides.last());
-var fsmCounter = 0;
+// var fsmSlides = $(".fsm-slide");
+// fsmSlides.first().before(fsmSlides.last());
+// var fsmCounter = 0;
 
-function changeSlideM() {
-    var fsmSlides = $(".fsm-slide");
-    var activeSlide = $(".active");
-    fsmSlides.last().after(fsmSlides.first());
-    activeSlide.removeClass("active").next(".fsm-slide").addClass("active");
-}
+// function changeSlideM() {
+//     var fsmSlides = $(".fsm-slide");
+//     var activeSlide = $(".active");
+//     fsmSlides.last().after(fsmSlides.first());
+//     activeSlide.removeClass("active").next(".fsm-slide").addClass("active");
+// }
 
-setInterval(function () {
-    if (window.innerWidth >= 1200) {
-        changeSlide();
-    } else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
-        changeSlideT();
-    } else if (window.innerWidth <= 480) {
-        changeSlideM();
-    }
-}, 3000);
+// setInterval(function () {
+//     if (window.innerWidth >= 1200) {
+//         changeSlide();
+//     } else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
+//         changeSlideT();
+//     } else if (window.innerWidth <= 480) {
+//         changeSlideM();
+//     }
+// }, 3000);
 
-var countDownDate = new Date("Jul 4, 2018 12:00:00").getTime();
-var ct = document.getElementsByClassName("ct");
+var countDownDate = new Date("Dec 2, 2018 12:00:00").getTime();
+var ct = document.getElementsByClassName(".flash-sales__timer__countdown__content");
 
 var x = setInterval(function () {
     var now = new Date().getTime();
@@ -149,15 +168,10 @@ var x = setInterval(function () {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("ct-d").innerHTML = days + "d";
-    document.getElementById("ct-h").innerHTML = hours + "h";
-    document.getElementById("ct-m").innerHTML = minutes + "m";
-    document.getElementById("ct-s").innerHTML = seconds + "s";
-
-    document.getElementById("ct-dm").innerHTML = days + "d";
-    document.getElementById("ct-hm").innerHTML = hours + "h";
-    document.getElementById("ct-mm").innerHTML = minutes + "m";
-    document.getElementById("ct-sm").innerHTML = seconds + "s";
+    document.getElementById("flash-sales__timer__countdown__day").innerHTML = days + "d";
+    document.getElementById("flash-sales__timer__countdown__hour").innerHTML = hours + "h";
+    document.getElementById("flash-sales__timer__countdown__minute").innerHTML = minutes + "m";
+    document.getElementById("flash-sales__timer__countdown__second").innerHTML = seconds + "s";
 
     if (distance < 0) {
         clearInterval(x);

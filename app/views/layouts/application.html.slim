@@ -19,11 +19,14 @@ html
     meta name="apple-mobile-web-app-status-bar-style" content="black" /
     link rel="dns-prefetch" href="https://fonts.googleapis.com/" /
     link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tajawal:300,400,700" /
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" /
     link rel="shortcut icon" href="images/logo-main.jpg" sizes=("16x16 24x24 32x32 48x48 64x64") /
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload"
 
-    / script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    = javascript_include_tag src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    = javascript_include_tag src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     
   body
     = yield
+    
   = javascript_include_tag src="application.js"

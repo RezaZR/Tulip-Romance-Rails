@@ -172,125 +172,28 @@ main.content.container-100.c-desktop
                 | &#10095;
 
     section.flash-sales.spacer
-        .fs-desktop
-            span.fs-timer
+            span.flash-sales__timer
                 h3.text-title.d-inline
                     | Flash Sales
-                .countdown-timer#countdown-timer.d-inline
-                    .ct#ct-d.d-inline
-                    .ct.d-inline
+                .flash-sales__timer__countdown#countdown-timer.d-inline
+                    .flash-sales__timer__countdown__content#flash-sales__timer__countdown__day.d-inline
+                    .flash-sales__timer__countdown__content.d-inline
                         | :
-                    .ct#ct-h.d-inline
-                    .ct.d-inline
+                    .flash-sales__timer__countdown__content#flash-sales__timer__countdown__hour.d-inline
+                    .flash-sales__timer__countdown__content.d-inline
                         | :
-                    .ct#ct-m.d-inline
-                    .ct.d-inline
+                    .flash-sales__timer__countdown__content#flash-sales__timer__countdown__minute.d-inline
+                    .flash-sales__timer__countdown__content.d-inline
                         | :
-                    .ct#ct-s.d-inline
-            .fs-slider
-                .fs-slide.active.p-30
-                    .container
-                        .row
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                .fs-slide.p-30
-                    .container
-                        .row
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                .fs-slide.p-30
-                    .container
-                        .row
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                .fs-slide.p-30
-                    .container
-                        .row
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-3
-                                a href="/products"
-                                    img.fs-slide-img.w-100 src="images/bedcover-1.jpg" /
-        .fs-tablet
-            span.fs-timer
-                h3.text-title.d-inline
-                    | Flash Sales
-                .countdown-timer#countdown-timer.d-inline
-                    .ct#ct-d.d-inline
-                    .ct.d-inline
-                        | :
-                    .ct#ct-h.d-inline
-                    .ct.d-inline
-                        | :
-                    .ct#ct-m.d-inline
-                    .ct.d-inline
-                        | :
-                    .ct#ct-s.d-inline
-            .fs-slider
-                .fst-slide.active.p-30
-                    .container
-                        .row
-                            .col-6
-                                a href="/products"
-                                    img.fst-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-6
-                                a href="/products"
-                                    img.fst-slide-img.w-100 src="images/bedcover-1.jpg" /
-                .fst-slide.p-30
-                    .container
-                        .row
-                            .col-6
-                                a href="/products"
-                                    img.fst-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-6
-                                a href="/products"
-                                    img.fst-slide-img.w-100 src="images/bedcover-1.jpg" /
-                .fst-slide.p-30
-                    .container
-                        .row
-                            .col-6
-                                a href="/products"
-                                    img.fst-slide-img.w-100 src="images/bedcover-1.jpg" /
-                            .col-6
-                                a href="/products"
-                                    img.fst-slide-img.w-100 src="images/bedcover-1.jpg" /
+                    .flash-sales__timer__countdown__content#flash-sales__timer__countdown__second.d-inline
+            .flash-sales__container.p-30
+                .flash-sales__container__owl.owl-carousel.owl-theme
+                    .item
+                        img src="images/bedcover-1.jpg"
+                    .item
+                        img src="images/bedcover-1.jpg"
+                    .item
+                        img src="images/bedcover-1.jpg"
 
     section.categories.spacer
         .ca-desktop
@@ -440,53 +343,6 @@ main.content.container.c-mobile
                 | &#10094;
             a.next.shadow-outset-sm onclick="plusSlidesM(1)"
                 | &#10095;
-
-    section.flash-sales.spacer
-        span.fs-timer
-            h3.text-title.d-inline
-                | Flash Sales
-            .countdown-timer#countdown-timer.d-inline
-                .ct#ct-dm.d-inline
-                .ct.d-inline
-                    | :
-                .ct#ct-hm.d-inline
-                .ct.d-inline
-                    | :
-                .ct#ct-mm.d-inline
-                .ct.d-inline
-                    | :
-                .ct#ct-sm.d-inline
-        .fsm-slider
-            .fsm-slide.active.p-30
-                .container
-                    .row
-                        .col-12
-                            a href="/products"
-                                img.fsm-slide-img.w-100 src="images/bedcover-1.jpg" /
-            .fsm-slide.p-30
-                .container
-                    .row
-                        .col-12
-                            a href="/products"
-                                img.fsm-slide-img.w-100 src="images/bedcover-1.jpg" /
-            .fsm-slide.p-30
-                .container
-                    .row
-                        .col-12
-                            a href="/products"
-                                img.fsm-slide-img.w-100 src="images/bedcover-1.jpg" /
-            .fsm-slide.p-30
-                .container
-                    .row
-                        .col-12
-                            a href="/products"
-                                img.fsm-slide-img.w-100 src="images/bedcover-1.jpg" /
-            .fsm-slide.p-30
-                .container
-                    .row
-                        .col-12
-                            a href="/products"
-                                img.fsm-slide-img.w-100 src="images/bedcover-1.jpg" /
 
     section.categories.spacer
         h3.text-title
