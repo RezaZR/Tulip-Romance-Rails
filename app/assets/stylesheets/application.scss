@@ -73,7 +73,8 @@ body {
     text-rendering: optimizeSpeed;
     overflow-x: hidden;
     line-height: 1.5;
-    background-color: #f8f8f8;
+    background: #f8f8f8;
+    background: linear-gradient(to right, #f1f1f1 0%, #f8f8f8 90%);
 }
 
 header, nav, main, section, footer {
@@ -294,27 +295,44 @@ textarea {
 }
 
 .btn {
+    border-radius: 5px;
+    border: none;
     padding: 1em 2em;
-    background-color: #0b0b0b !important;
-    color: #fff !important;
-    border: 2px solid #0b0b0b;
-    border-radius: 3px;
-    &:hover {
-        background-color: transparent !important;
-        color: #0b0b0b !important;
+    cursor: pointer;
+    @at-root #{&}--sm {
+        border-radius: 5px;
+        border: none;
+        padding: .5em 1em;
+        cursor: pointer;
     }
 }
 
-.btn-sm {
-    padding: .25em 1em;
-}
-
-.btn-red {
-    background-color: #ab0000 !important;
-    border: 2px solid #ab0000 !important;
+.btn-standard {
+    background-color: #0b0b0b !important;
+    background-image: linear-gradient(-180deg, #4f4f4f 0%, #0b0b0b 90%) !important;
+    color: #fff !important;
     &:hover {
-        background-color: transparent !important;
-        color: #ab0000 !important;
+        background-color: #000 !important;
+        background-image: linear-gradient(-180deg, #444444 0%, #000000 90%) !important
+    }
+    @at-root #{&}--primary {
+        background: #ab0000 !important;
+        background: linear-gradient(-180deg, #c30404 0%, #ab0000 90%) !important;
+        border: 2px solid #ab0000 !important;
+        color: #fff !important;
+        &:hover {
+            background-color: transparent !important;
+            color: #ab0000 !important;
+        }
+    }
+    @at-root #{&}--delete {
+        background-color: #fb2424;
+        background-image: linear-gradient(-180deg, #fb2424 0%, #b50000 90%) !important;
+        color: #fff !important;
+        border: none;
+        &:hover {
+            background-image: linear-gradient(-180deg, #e84141 0%, #ad0606 90%) !important;
+        }
     }
 }
 
@@ -351,7 +369,6 @@ text-align: center;
 }
 
 .text-title {
-    margin: .5em 0;
     font-size: 22px;
     font-weight: 600;
 }
@@ -394,7 +411,8 @@ text-align: center;
 
 
 .header-logo {
-    background-color: #D50000;
+    background: #D50000;
+    background: linear-gradient(-180deg, #f55c5c 0%, #D50000 90%);
     .nav-items {
         img {
             width: 30px;
@@ -411,7 +429,8 @@ text-align: center;
 }
 
 .header-nav {
-    background-color: #ab0000;
+    background: #ab0000;
+    background: linear-gradient(-180deg, #c30404 0%, #ab0000 90%);
     .nav-items {
         li {
             padding: .5em 1.25em;
@@ -676,19 +695,23 @@ button {
                 border-radius: 3px;
             }
             #flash-sales__timer__countdown__day {
-                background-color: #D50000;
+                background: #D50000;
+                background: linear-gradient(-180deg, #f55c5c 0%, #D50000 90%);
                 color: #fff;
             }
             #flash-sales__timer__countdown__hour {
-                background-color: #D50000;
+                background: #D50000;
+                background: linear-gradient(-180deg, #f55c5c 0%, #D50000 90%);
                 color: #fff;
             }
             #flash-sales__timer__countdown__minute {
-                background-color: #D50000;
+                background: #D50000;
+                background: linear-gradient(-180deg, #f55c5c 0%, #D50000 90%);
                 color: #fff;
             }
             #flash-sales__timer__countdown__second {
-                background-color: #D50000;
+                background: #D50000;
+                background: linear-gradient(-180deg, #f55c5c 0%, #D50000 90%);
                 color: #fff;
             }
         }
