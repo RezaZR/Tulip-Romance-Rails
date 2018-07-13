@@ -308,12 +308,12 @@ textarea {
 }
 
 .btn-standard {
-    background-color: #0b0b0b !important;
-    background-image: linear-gradient(-180deg, #4f4f4f 0%, #0b0b0b 90%) !important;
+    background: #0b0b0b !important;
+    background: linear-gradient(-180deg, #4f4f4f 0%, #0b0b0b 90%) !important;
     color: #fff !important;
     &:hover {
-        background-color: #000 !important;
-        background-image: linear-gradient(-180deg, #444444 0%, #000000 90%) !important
+        background: #000 !important;
+        background: linear-gradient(-180deg, #444444 0%, #000000 90%) !important
     }
     @at-root #{&}--primary {
         background: #ab0000 !important;
@@ -321,17 +321,17 @@ textarea {
         border: 2px solid #ab0000 !important;
         color: #fff !important;
         &:hover {
-            background-color: transparent !important;
+            background: transparent !important;
             color: #ab0000 !important;
         }
     }
     @at-root #{&}--delete {
-        background-color: #fb2424;
-        background-image: linear-gradient(-180deg, #fb2424 0%, #b50000 90%) !important;
+        background: #fb2424 !important;
+        background: linear-gradient(-180deg, #fb2424 0%, #b50000 90%) !important;
         color: #fff !important;
         border: none;
         &:hover {
-            background-image: linear-gradient(-180deg, #e84141 0%, #ad0606 90%) !important;
+            background: linear-gradient(-180deg, #e84141 0%, #ad0606 90%) !important;
         }
     }
 }
@@ -368,9 +368,14 @@ text-align: center;
     text-align: right;
 }
 
-.text-title {
-    font-size: 22px;
-    font-weight: 600;
+.title {
+    display: block;
+    overflow: hidden;
+    margin: .25em 0;
+    &__text {
+        font-size: 22px;
+        font-weight: 600;
+    }
 }
 
 .sticky {
@@ -412,7 +417,7 @@ text-align: center;
 
 .header-logo {
     background: #D50000;
-    background: linear-gradient(-180deg, #f55c5c 0%, #D50000 90%);
+    background: linear-gradient(-180deg, #f74545 0%, #D50000 90%);
     .nav-items {
         img {
             width: 30px;
